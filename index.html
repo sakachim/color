@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サカチムプラス 公式カラーテンプレート</title>
+    <meta name="description" content="UIデザインにおける一貫性と品質を確保するための公式ガイドライン">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>サカチムプラス 公式カラーテンプレート</h1>
+            <div class="logo"><img src="logo.png" alt="サカチムプラス" class="logo-image"></div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+        <!-- Sidebar Controls -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>配色パターン選択</h3>
+                <div class="pattern-selector">
+                    <label for="patternSelect">パターン番号 (1-100)</label>
+                    <select id="patternSelect" class="pattern-select">
+                        <!-- Options will be dynamically generated -->
+                    </select>
+                </div>
+                <div class="pattern-info" id="patternInfo">
+                    <div class="color-preview-item">
+                        <span class="color-label">A:</span>
+                        <div class="color-box" id="colorBoxA"></div>
+                        <span class="color-code" id="colorCodeA">#000000</span>
+                    </div>
+                    <div class="color-preview-item">
+                        <span class="color-label">B:</span>
+                        <div class="color-box" id="colorBoxB"></div>
+                        <span class="color-code" id="colorCodeB">#000000</span>
+                    </div>
+                    <div class="color-preview-item">
+                        <span class="color-label">C:</span>
+                        <div class="color-box" id="colorBoxC"></div>
+                        <span class="color-code" id="colorCodeC">#000000</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="content-area">
+            <!-- Color Application Rules Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>カラー適用ルール：基本構成</h2>
+                    <p>リアルタイムプレビュー</p>
+                </div>
+
+                <div class="preview-container">
+                    <!-- Color Blocks Preview -->
+                    <div class="website-preview">
+                        <!-- Upper Block (Left: A, Right: B with gradient) -->
+                        <div class="preview-upper-block" id="previewUpperBlock">
+                            <div class="block-label">上ブロック<br class="sp-only">（左の色=A / 右の色=B）</div>
+                        </div>
+
+                        <!-- Middle Spacer -->
+                        <div class="middle-spacer"></div>
+
+                        <!-- Lower Block (C) -->
+                        <div class="preview-lower-block" id="previewLowerBlock">
+                            <div class="block-label">下ブロック=C</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <!-- Color Palette Gallery Section -->
+            <section class="section">
+                <div class="section-header">
+                    <h2>全カラーパターン一覧</h2>
+                    <p>No.1～100のカラーパターン</p>
+                </div>
+
+                <div class="palette-gallery" id="paletteGallery">
+                    <!-- Dynamically generated color pattern cards will be inserted here -->
+                </div>
+            </section>
+
+            <!-- Character Tip Section -->
+            <section class="tip-section">
+                <div class="tip-container">
+                    <img src="robota.png" alt="ろぼた君" class="tip-character">
+                    <div class="tip-bubble">
+                        <p>スマートフォンの場合、横向きにすると見やすいよ！</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
